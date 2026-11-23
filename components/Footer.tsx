@@ -16,9 +16,9 @@ export default function Footer() {
 
         <div className={styles.linksGroup}>
           <h2 className={styles.columnTitle}>Explore</h2>
-          <a href="#about" className={styles.link}>About DesignQube</a>
-          <a href="#services" className={styles.link}>Our services</a>
-          <a href="#features" className={styles.link}>Our process</a>
+          <a href="/#about" className={styles.link}>About DesignQube</a>
+          <a href="/#services" className={styles.link}>Our services</a>
+          <a href="/#features" className={styles.link}>Our process</a>
         </div>
 
         <div className={styles.linksGroup}>

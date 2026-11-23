@@ -1,0 +1,117 @@
+.page {
+  min-height: 68vh;
+  padding-top: 5rem;
+  background:
+    radial-gradient(ellipse at 50% 36%, rgba(209, 196, 170, 0.22), transparent 56%),
+    var(--background);
+}
+
+.profile {
+  display: grid;
+  min-height: 68vh;
+  place-items: center;
+  padding: 4rem 1.5rem 6rem;
+  text-align: center;
+}
+
+.content {
+  width: min(100%, 680px);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.title {
+  margin: 0;
+  color: var(--foreground);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.description {
+  max-width: 530px;
+  margin: 1.5rem auto 2.25rem;
+  color: var(--text-muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.75;
+}
+
+.downloadButton {
+  display: inline-flex;
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid var(--foreground);
+  background: var(--foreground);
+  color: var(--background);
+  font-size: 0.98rem;
+  font-weight: 600;
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.downloadButton:hover {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+
+.downloadButton:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.fileType {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid currentColor;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.fileNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.fileNote svg {
+  color: var(--primary);
+}
+
+@media (max-width: 480px) {
+  .page,
+  .profile {
+    min-height: 65vh;
+  }
+
+  .profile {
+    padding: 3rem 1.25rem 4.5rem;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+  }
+
+  .downloadButton {
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .fileNote {
+    font-size: 0.74rem;
+  }
+}
